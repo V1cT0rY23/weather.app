@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WEATHER APP</title>
+</head>
+<body>
+          <!--Navbar consisting of logo and header-->
+   <nav>
+    <img src="svg/thunderstorms-day-extreme-snow.svg" alt="logo">
+     <h1>Weather</h1>
+   </nav>
+
+   <main>
+
+           <!--searchbox and button-->
+    <div class="search">
+      <input type="text" placeholder="search for location" id="search-input">
+      <button id="search-button">search</button>
+    </div>
+
+            <!--main container consisting of location temp descrp and tempvalue-->
+      <div class="container">
+          <div class="location">
+            <h3>Lagos, Nigeria</h3>
+          </div>
+          <div class="temperature-description">
+            <p> Heavy Rainfall</p>
+         </div>
+         <div class="weather-icon">
+            <img src="svg/thunderstorms-day-extreme-rain.svg" alt="" loading="lazy">
+          </div>
+          <div class="temperature-value">
+            <h4>23 °<span>C</span></h4>
+          </div>
+      </div>
+  
+          <!--forecast section-->
+     <div class="section">
+        <div>
+            <img src="svg/humidity.svg" alt="humidity" class="humidity" loading="lazy">
+            <div class="humidity-value"><p>3.7</p></div>
+        </div>
+        <div>
+            <img src="svg/wind.svg" alt="windspeed" class="windspeed" loading="lazy">
+           <div class="windspeed-value"><p>6.9</p></div>
+    </div>
+        <div>
+             <img src="svg/barometer.svg" alt="atm" class="atm" loading="lazy">
+             <div class="atm-value"><p>20</p>
+        </div>
+    </div>
+     </div>
+            <!--forecast section+-->
+     <div class="section2">
+       <div></div>
+       <div></div>
+        <div>
+           <img src="svg/overcast-hail.svg" alt="" loading="lazy">
+           <p>10°<span>C</span></p>
+        </div>
+        <div>
+           <img src="svg/extreme-day-fog.svg" alt="" loading="lazy">
+           <p>25°<span>C</span></p>
+        </div>
+        <div>
+          <img src="svg/dust-wind.svg" alt="" loading="lazy">
+          <p>22°<span>C</span></p>
+        </div>
+        <div>
+          <img src="svg/drizzle.svg" alt="" loading="lazy">
+          <p>17°<span>C</span> </p>
+        </div>
+        <div>
+        <img src="svg/clear-night.svg" alt="" loading="lazy">
+        <p>20°<span>C</span></p>
+        </div>
+     </div>
+
+
+   </main>
+
+   <script src="app.js"></script>
+</body>
+</html>
