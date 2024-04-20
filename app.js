@@ -1,3 +1,5 @@
+alert('Turn on your location to use this weather service')
+
 // SELECT ELEMENTS
 const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value h4");
