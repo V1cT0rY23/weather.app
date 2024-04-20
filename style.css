@@ -11,7 +11,6 @@ html {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     background-color: #fffafa;
-    animation: slide 3s forwards;
 }
 html::-webkit-scrollbar{
     width: 0;
@@ -163,14 +162,6 @@ nav {
         box-shadow:2px 1px 5px orange;
     }
 }
-@keyframes slide {
-    0% {
-     transform: translate(0px, 100px);
-    }
-    100% {
-     transform: translate(0px, 0px);
-    }
- }
 .search {
     display: flex;
     justify-content: center;
