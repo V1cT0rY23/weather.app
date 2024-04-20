@@ -211,6 +211,7 @@ section  ,
      font-size: 22px;
      border: 2px;
      border-radius: 10px;
+     width: 20vw;
 }
 .section2 div{
     display: flex;
