@@ -64,6 +64,7 @@ nav img {
 .temperature-value span {
   color: #293251;
   font-size: 1.1em;
+  cursor: pointer;
 }
 .location h3 {
   margin-top: -1px;
@@ -75,6 +76,7 @@ nav img {
   padding-top: 20px;
   font-weight: 700;
   text-align: center;
+  cursor: pointer;
 }
 .temperature-description p {
   margin-top: 10px;
