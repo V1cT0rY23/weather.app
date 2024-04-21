@@ -58,7 +58,7 @@ nav img {
   box-shadow: 1px 1px 5px black;
   margin-top: 6px;
   animation: scrol 5s linear infinite;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 .temperature-value span {
