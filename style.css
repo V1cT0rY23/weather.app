@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -103,6 +103,11 @@ nav img {
   gap: 40px;
   animation: scrol 6s linear infinite;
   background-color: white;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: 2s smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 .section2 {
   margin: 15px;
@@ -122,6 +127,9 @@ nav img {
 .section2::-webkit-scrollbar {
   width: 0;
 }
+.section::-webkit-scrollbar {
+  width: 0;
+}
 .section2 div {
   height: 200px;
   border: 2px none;
@@ -136,8 +144,9 @@ nav img {
 }
 .section img {
   width: 20vw;
-  height: 10vh;
+  height: 14vh;
   border: 2px;
+  padding-top: 30px;
 }
 nav {
   box-shadow: 1px 1px 5px black;
@@ -203,7 +212,10 @@ nav {
 section,
 .humidity-value p,
 .windspeed-value p,
-.atm-value p {
+.atm-value p,
+.sunrise-value p,
+.sunset-value p,
+.gust-value p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,6 +226,7 @@ section,
   border: 2px;
   border-radius: 10px;
   width: 20vw;
+  padding-bottom: 20px;
 }
 .section2 div {
   display: flex;
@@ -228,4 +241,12 @@ section,
 .section2 div p {
   font-size: 22px;
   font-weight: 700;
+}
+.section2 div p1,p2,p3,p4,p5 {
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding-top: 5px;
 }
