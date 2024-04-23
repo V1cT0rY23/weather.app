@@ -109,9 +109,6 @@ nav img {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
-.section div p1 {
-  font-size: 20rem;
-}
 .section2 {
   margin: 15px;
   border: 2px none;
