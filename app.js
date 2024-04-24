@@ -74,7 +74,7 @@ function displayWeather() {
   locationElement.innerHTML = `${weather.city}, ${weather.country}`;
   humidityElement.innerHTML = `${weather.humidity}%`;
   atmElement.innerHTML = `${weather.atm}Pa`;
-  windElement.innerHTML = `${weather.wind}km/h`;
+  windElement.innerHTML = `${weather.wind}m/s`;
 }
 
 // C to F conversion
