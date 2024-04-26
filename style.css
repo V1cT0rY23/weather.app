@@ -58,6 +58,7 @@ nav img {
   margin-top: 6px;
   animation: scrol 5s linear infinite;
   background-color: white;
+  color: #9;
 }
 
 .temperature-value span {
