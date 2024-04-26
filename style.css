@@ -58,7 +58,6 @@ nav img {
   margin-top: 6px;
   animation: scrol 5s linear infinite;
   background-color: white;
-  color: #9;
 }
 
 .temperature-value span {
@@ -229,7 +228,7 @@ section,
   width: 90px;
 }
 .section2 div p {
-  font-size: 12px;
+  font-size: 10.5px;
   font-weight: 800;
   display: flex;
   justify-content: center;
