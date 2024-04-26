@@ -7,6 +7,7 @@ const humidityElement = document.querySelector(".humidity-value p");
 const windElement = document.querySelector(".windspeed-value p");
 const atmElement = document.querySelector(".atm-value p");
 const notificationElement = document.querySelector(".notification");
+const forecastSection = document.querySelector(".section2 ");
 
 // App data
 const weather = {};
@@ -128,4 +129,44 @@ getWeatherButton.addEventListener("click", function () {
   const cityInput = document.querySelector(".search-input");
 
   getWeatherByInput(cityInput.value);
+  getWeatherDetails(cityInput.value);
 });
+
+const getWeatherDetails = (city, country) => {
+  const WEATHER_API_URL = `http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${key}`;
+  fetch(WEATHER_API_URL)
+    .then((res) => res.json())
+    .then((data) => {
+      //filter to get only one forecast a day
+      const uniqueForecastDays = [];
+      const fiveDaysForecast = data.list.filter((forecast) => {
+        const forecastDate = new Date(forecast.dt_txt).getDate();
+        if (!uniqueForecastDays.includes(forecastDate)) {
+          return uniqueForecastDays.push(forecastDate);
+        }
+      });
+
+      //clearing previous forecast
+
+      forecastSection.innerHTML = "";
+
+      console.log(fiveDaysForecast);
+      fiveDaysForecast.forEach((weatherItem) => {
+        forecastSection.insertAdjacentHTML(
+          "beforeend",
+          createWeatherCard(weatherItem)
+        );
+      });
+    })
+    .catch(() => {
+      alert("Error fetching weather forecast");
+    });
+};
+
+const createWeatherCard = (weatherItem) => {
+  return `<div>
+            <p>${weatherItem.dt_txt.split(" ")[0]}</p>
+            <img src="icons/${weatherItem.weather[0].icon}.svg"/>
+            <p>${(weatherItem.main.temp - 273.15).toFixed(2)}°<span>C</span></p>
+         </div>`;
+};

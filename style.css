@@ -108,10 +108,9 @@ nav img {
   margin: 15px;
   border: 2px none;
   height: 270px;
-  width: 93vw;
+  width: 90vw;
   border-radius: 25px;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 20px;
   overflow-x: auto;
@@ -227,14 +226,10 @@ section,
   width: 90px;
 }
 .section2 div p {
-  font-size: 22px;
-  font-weight: 700;
-}
-.section2 div p1,p2,p3,p4,p5 {
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 10.5px;
+  font-weight: 800;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   padding-top: 5px;
 }
