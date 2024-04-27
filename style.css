@@ -107,7 +107,7 @@ nav img {
 }
 .section2 {
   margin: 15px;
-  margin-top: -6px ;
+  margin-top: -6px;
   border: 2px none;
   height: 300px;
   width: 90vw;
@@ -227,9 +227,17 @@ section,
   height: 100px;
   width: 90px;
 }
-.section2 div p {
-  font-size: 10.5px;
+.section2 div p1 {
+  font-size: 12px;
   font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+.section2 div p {
+  font-size: 1.1rem;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
