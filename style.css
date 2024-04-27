@@ -257,9 +257,9 @@ a {
   background-color: white;
   scroll-behavior: 2s smooth;
 }
- a{
-   text-decoration: none;
-   color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 a:active {
   box-shadow: inset 1px 1px 5px black;
