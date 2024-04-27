@@ -38,7 +38,7 @@ input {
 }
 button {
   height: 35px;
-  border-radius: 20px;
+  border-radius: 10px;
   width: 200px;
   box-shadow: 1px 1px 5px black;
   border: 2px;
