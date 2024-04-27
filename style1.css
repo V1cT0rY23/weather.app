@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: "poppins", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fffafa;
+  }
+  html::-webkit-scrollbar {
+    width: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    font-stretch: narrower;
+    width: 100vw;
+    height: auto;
+    margin-top: 10px;
+  }
+  input {
+        height: 35px;
+        width: 70vw;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px black;
+        border: 2px;
+        text-align: center;
+        font-size: 1rem;
+        animation: scrol 5s linear infinite;
+  }
+  button {
+    height: 35px;
+    border-radius: 20px;
+    width: 200px;
+    box-shadow: 1px 1px 5px black;
+    border: 2px;
+    transition: 0.8s;
+    text-align: center;
+    background-color:snow;
+  }
+  button:active {
+    box-shadow: inset 1px 1px 5px black;
+  }
+  @keyframes scrol {
+    0% {
+      box-shadow: 2px 1px 5px yellow;
+    }
+    25% {
+      box-shadow: 3px 2px 6px purple;
+    }
+    50% {
+      box-shadow: 2px 1px 5px blue;
+    }
+    75% {
+      box-shadow: 3px 2px 6px red;
+    }
+    100% {
+      box-shadow: 2px 1px 5px orange;
+    }
+  }
+h1 img {
+    height: 100px;
+    width: 100px;
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#alerts {
+    height: 300px;
+    width: 80vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    border: 2px;
+   text-align: center;
+   font-size: 1rem;
+   animation: scrol 5s linear infinite;
+}

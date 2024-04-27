@@ -3,6 +3,7 @@
   margin: 0%;
   padding: 0%;
   font-family: "poppins", sans-serif;
+  border: 1px solid re;
 }
 html {
   scroll-behavior: smooth;
@@ -181,9 +182,6 @@ nav {
   animation: scrol 5s linear infinite;
   transition: 0.4s;
 }
-.search input:focus {
-  border: 0px none;
-}
 .search .search-button {
   height: 35px;
   width: 15vw;
@@ -192,6 +190,7 @@ nav {
   border: 2px;
   animation: scrol 5s linear infinite;
   transition: 0.5s;
+  text-align: center;
 }
 .search input::placeholder {
   padding: 8px;
@@ -242,4 +241,26 @@ section,
   justify-content: center;
   align-items: center;
   padding-top: 5px;
+}
+a {
+  margin: 15px;
+  border: 2px;
+  margin-top: -50px;
+  height: 70px;
+  width: 93vw;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: white;
+  scroll-behavior: 2s smooth;
+}
+ a{
+   text-decoration: none;
+   color: black;
+}
+a:active {
+  box-shadow: inset 1px 1px 5px black;
 }
