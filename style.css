@@ -227,7 +227,7 @@ section,
   width: 90px;
 }
 .section2 div p1 {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
   display: flex;
   justify-content: center;
@@ -235,7 +235,7 @@ section,
   padding-top: 5px;
 }
 .section2 div p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   display: flex;
   justify-content: center;
