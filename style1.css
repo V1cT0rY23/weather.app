@@ -86,4 +86,5 @@ h1 {
   text-align: center;
   font-size: 1rem;
   animation: scrol 5s linear infinite;
+  padding: 10px;
 }

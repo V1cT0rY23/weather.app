@@ -246,9 +246,9 @@ a {
   margin: 15px;
   border: 2px;
   margin-top: -50px;
-  height: 70px;
+  height: 50px;
   width: 93vw;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 1px 1px 5px black;
   display: flex;
   justify-content: center;
