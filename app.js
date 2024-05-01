@@ -1,4 +1,4 @@
-// SELECT ELEMENTS
+LP// SELECT ELEMENTS
 const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value h4");
 const descElement = document.querySelector(".temperature-description p");
@@ -167,6 +167,6 @@ const createWeatherCard = (weatherItem) => {
   return `<div>
             <p1>${weatherItem.dt_txt.split(" ")[0]}</p1>
             <img src="icons/${weatherItem.weather[0].icon}.svg"/>
-            <p>${math.ceil(weatherItem.main.temp - 273.15).toFixed(2)}°<span>C</span></p>
+            <p>${(math.ceil(weatherItem.main.temp - 273.15)).toFixed(2)}°<span>C</span></p>
          </div>`;
 };
