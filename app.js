@@ -167,6 +167,6 @@ const createWeatherCard = (weatherItem) => {
   return `<div>
             <p1>${weatherItem.dt_txt.split(" ")[0]}</p1>
             <img src="icons/${weatherItem.weather[0].icon}.svg"/>
-            <p>${(weatherItem.main.temp - 273.15).toFixed(2)}°<span>C</span></p>
+            <p>${Math.ceil(weatherItem.main.temp - 273.15).toFixed(2)}°<span>C</span></p>
          </div>`;
 };
