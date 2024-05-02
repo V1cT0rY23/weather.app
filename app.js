@@ -30,7 +30,7 @@ if ("geolocation" in navigator) {
 }
 
 // SET USER'S POSITION
-function setPosition(position) {
+const setPosition = (position) => {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
 
